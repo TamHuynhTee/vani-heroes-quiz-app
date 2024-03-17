@@ -1,0 +1,90 @@
+[
+  {
+    "_id": "1",
+    "question": "How can you accumulate and use membership points with vani?",
+    "options": [
+      {
+        "_id": "1",
+        "label": "Hand over membership card",
+        "correct": false
+      },
+      {
+        "_id": "2",
+        "label": "Tell your Phone number",
+        "correct": false
+      },
+      {
+        "_id": "3",
+        "label": "Show Vani Barcode on the Home screen",
+        "correct": true
+      }
+    ],
+    "hint": "To earn/use membership points with vani benefits, scan the Vani Barcode"
+  },
+  {
+    "_id": "2",
+    "question": "What is an additional reward when you earn membership points with vani?",
+    "options": [
+      {
+        "_id": "1",
+        "label": "Vani Point",
+        "correct": false
+      },
+      {
+        "_id": "2",
+        "label": "Vani Coin",
+        "correct": true
+      },
+      {
+        "_id": "3",
+        "label": "Vani Money",
+        "correct": false
+      }
+    ],
+    "hint": "Earn/use membership points with vani. Open Ice Cream. Get Vani Coins"
+  },
+  {
+    "_id": "3",
+    "question": "There is another way to get Vani Coin. What is it?",
+    "options": [
+      {
+        "_id": "1",
+        "label": "Leave a 1:1 inquiry",
+        "correct": false
+      },
+      {
+        "_id": "2",
+        "label": "Run the vani app every day",
+        "correct": false
+      },
+      {
+        "_id": "3",
+        "label": "Play Shake",
+        "correct": true
+      }
+    ],
+    "hint": "You can get additional Vani Coins when you play Shake once a day"
+  },
+  {
+    "_id": "4",
+    "question": "How can you use Vani Coin?",
+    "options": [
+      {
+        "_id": "1",
+        "label": "Exchange to Voucher",
+        "correct": true
+      },
+      {
+        "_id": "2",
+        "label": "Buy a product at stores",
+        "correct": false
+      },
+      {
+        "_id": "3",
+        "label": "Exchange to membership points",
+        "correct": true
+      }
+    ],
+    "hint": "Your Vani Coins can be exchanged for other membership points or Vouchers"
+  }
+]

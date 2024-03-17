@@ -18,16 +18,110 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  background: rgb(var(--background-end-rgb));
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.next-image-wrapper {
+  position: relative;
+}
+
+.next-image-wrapper img,
+.next-image-wrapper svg {
+  width: 100%;
+  height: 100%;
+}
+
+input[type='checkbox'].collapse-toggle:checked + label > .next-image-wrapper {
+  transform: rotate(270deg);
+}
+
+input[type='checkbox'].collapse-toggle:checked ~ h3 {
+  display: block;
+}
+
+/* MODAL */
+
+.modal.opening .modal-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal.opening .modal-wrapper {
+  display: block;
+  animation: modal-appear 350ms ease-in 1;
+}
+
+@keyframes modal-appear {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, calc(-50% - 10px));
+  }
+}
+
+/* DRAWER */
+
+.drawer.opening .drawer-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.drawer.opening .drawer-wrapper {
+  bottom: 0;
+  animation: drawer-appear 250ms ease-in 1;
+}
+
+@keyframes drawer-appear {
+  0% {
+    bottom: -100%;
+    /* opacity: 0; */
+    /* transform: translate(-50%, calc(-50% - 10px)); */
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+/* CHECK MARK */
+.check_mark {
+  position: relative;
+  display: inline-block;
+  width: 20px; /* Adjust size as needed */
+  height: 20px; /* Adjust size as needed */
+}
+
+.check_mark:before,
+.check_mark:after {
+  content: '';
+  position: absolute;
+  @apply bg-primary;
+}
+
+.check_mark:before {
+  /* First part of the check mark */
+  left: 6px;
+  bottom: 1px;
+  width: 3px; /* Line thickness */
+  height: 7px; /* Line length */
+  transform: rotate(-45deg);
+}
+
+.check_mark:after {
+  /* Second part of the check mark */
+  left: 7px;
+  bottom: 4px;
+  width: 12px; /* Line length */
+  height: 3px; /* Line thickness */
+  transform: rotate(-45deg);
 }
