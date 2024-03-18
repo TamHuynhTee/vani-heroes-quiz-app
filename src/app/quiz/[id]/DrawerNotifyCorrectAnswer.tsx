@@ -20,7 +20,7 @@ const DrawerNotifyCorrectAnswer = ({
       <div className="">
         <div className="flex justify-center mb-4">
           <Image
-            src={'/icon-success.png'}
+            src={'/success-icon-23194.png'}
             alt="success option"
             width={72}
             height={72}
